@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--bouncing-->
+    <TextView
+        android:id="@+id/tv_bouncing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:text="bouncing"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_bouncing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_bouncing"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_boun_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/et_boun_1"
+            android:layout_alignBottom="@+id/et_boun_1"
+            android:gravity="center_vertical"
+            android:text="BOUN_DEG"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/et_boun_1"
+            android:layout_width="@dimen/settingEditTextWidth"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            android:imeOptions="flagNoFullscreen"
+            android:inputType="number"
+            android:text="value"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/tv_boun_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/et_boun_2"
+            android:layout_alignBottom="@+id/et_boun_2"
+            android:gravity="center_vertical"
+            android:text="MULTIPLIER"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/et_boun_2"
+            android:layout_width="@dimen/settingEditTextWidth"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            android:imeOptions="flagNoFullscreen"
+            android:inputType="number"
+            android:layout_below="@+id/et_boun_1"
+            android:text="value"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/tv_boun_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/et_boun_3"
+            android:layout_alignBottom="@+id/et_boun_3"
+            android:gravity="center_vertical"
+            android:text="BOUN_HEIGHT_MULTI"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/et_boun_3"
+            android:layout_width="@dimen/settingEditTextWidth"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            android:imeOptions="flagNoFullscreen"
+            android:inputType="number"
+            android:layout_below="@+id/et_boun_2"
+            android:text="value"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"/>
+
+    </RelativeLayout>
+
+
+    <!--overscroll-->
+    <TextView
+        android:id="@+id/tv_overscroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_bouncing"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="overscroll"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_overscroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_overscroll"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_over_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/et_over_1"
+            android:layout_alignBottom="@+id/et_over_1"
+            android:gravity="center_vertical"
+            android:text="OVER_DEG"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/et_over_1"
+            android:layout_width="@dimen/settingEditTextWidth"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            android:imeOptions="flagNoFullscreen"
+            android:inputType="number"
+            android:text="value"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"/>
+
+    </RelativeLayout>
+
+
+    <!--release-->
+    <TextView
+        android:id="@+id/tv_release"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_overscroll"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="release"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_release"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_rele_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/et_rele_1"
+            android:layout_alignBottom="@+id/et_rele_1"
+            android:gravity="center_vertical"
+            android:text="RELE_DEG"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/et_rele_1"
+            android:layout_width="@dimen/settingEditTextWidth"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            android:imeOptions="flagNoFullscreen"
+            android:inputType="number"
+            android:text="value"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/tv_rele_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/et_rele_2"
+            android:layout_alignBottom="@+id/et_rele_2"
+            android:gravity="center_vertical"
+            android:text="RELE_DURATION"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/et_rele_2"
+            android:layout_width="@dimen/settingEditTextWidth"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            android:imeOptions="flagNoFullscreen"
+            android:inputType="number"
+            android:layout_below="@+id/et_rele_1"
+            android:text="value"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
